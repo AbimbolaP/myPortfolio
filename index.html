@@ -4,21 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abimbola Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
     <!-- font-awesome -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
     />
+    <!--Google Font-->
+    <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans=Pro:300,900&display=swap" rel="stylesheet">
 
     <!-- styles -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header>
     <nav>
       <div class="nav-center">
         <!-- nav header -->
         <div class="nav-header">
-         <h2>My Portfolio</h2>
+         <h3> A0 </h3>
           <button class="nav-toggle">
             <i class="fas fa-bars"></i>
           </button> 
@@ -26,10 +31,10 @@
         <!-- links -->
       <ul class="links">
         <li>
-          <a href="#Home">home</a>
+          <a href="#home">home</a>
         </li>
         <li>
-          <a href="#About">about</a>
+          <a href="#services">services</a>
         </li>
         <li>
           <a href="#projects">projects</a>
@@ -61,18 +66,70 @@
       </ul>
       </div>
     </nav>
-    <section id="Home">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto tempora magnam alias, veritatis deserunt earum reiciendis, excepturi quam fugit, perspiciatis voluptatum libero! Quis velit voluptatem magni fugit necessitatibus modi similique.</p>
+    </header>
+
+    <!--Introduction-->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Abimbola Otegbayo</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">Front-end dev</p>
+      <img src="./images/heroimage.jpeg" alt="Picture of Abimbola smiling">
     </section>
-    <section id="About">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam nostrum eaque ducimus vel magni earum corrupti deleniti et sint illo recusandae, amet veniam porro enim suscipit culpa totam. Voluptatem, neque!</p>
+
+    <!--My Services-->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Web development</h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium voluptatem aut voluptate exercitationem aliquam laboriosam dolorum, reiciendis veritatis tempora debitis aspernatur, sapiente maxime sed ab obcaecati tempore id. Dolorem, quaerat.</p>
+        </div>
+        <div class="service">
+          <h3>Content writing</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas saepe reiciendis libero nesciunt pariatur itaque minima voluptatem. Cum, est unde atque facere, quod cupiditate deserunt soluta tenetur, omnis magnam assumenda?</p>
+        </div>
+        <div class="service">
+          <h3>Academic writing</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium quibusdam delectus nobis. Numquam velit harum quis tempora voluptatibus veniam quia inventore quidem consequatur ab repellat rem dolores, fugit, itaque voluptate.</p>
+        </div>
+      </div> 
     </section>
-    <section id="Projects">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni modi cum quam libero quidem itaque. Voluptatum, rerum maiores, voluptatibus quod sunt est, debitis consectetur eligendi iure aspernatur enim pariatur libero.</p>
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about"> Web Developer and Writer based in Ibadan, Nigeria </p>
+      <div class="about-me__body">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex consectetur repudiandae dolorem similique porro sapiente a id, rem, beatae eius nisi blanditiis natus, pariatur iste ipsa! Rerum repellendus odio repudiandae?</p>
+      </div>
     </section>
-    <section id="Contact">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint repellat hic eveniet accusamus maxime molestias et, ratione eligendi sapiente quos quia expedita asperiores dignissimos rerum eos modi magni? Vero, accusantium!</p>
+    <!--My work-->
+    <section class="my-work" id="work">
+      <h2 class="section__title">My work</h2>
+      <p class="section__subtitle"></p>
+
+      <div class="portfolio">
+        <!--Portfolio Item 01-->
+        <a href="#" class="portfolio__item">
+          <img src="./images/ColourFlipper.png" alt="" class="portfolio_img">
+        </a>
+      <!--Portfolio Item 02-->
+        <a href="#" class="portfolio__item">
+          <img src="./images/Cakeit.png" alt="" class="portfolio_img">
+        </a>
+        <!--Portfolio Item 03-->
+        <a href="#" class="portfolio__item">
+          <img src="./images/SignUp.png" alt="" class="portfolio_img">
+        </a>
+        <!--Portfolio Item 04-->
+        <a href="#" class="portfolio__item">
+          <img src="./images/Counter.png" alt="" class="portfolio_img">
+        </a>
+    </div>
     </section>
+
+    <footer>
+      <a href="mailto:abimbola.peace131@gmail.com" class="footer__link">abimbola.peace131@gmail.com</a>
+    </footer>
     <!-- javascript -->
     <script src="app.js"></script>
   </body>
