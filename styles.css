@@ -59,7 +59,7 @@ Variables
 
   --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
         0.125em 0.125em 0.25em rgba(0,0,0,.15);
-        
+
   --transition: all 0.3s linear;
   --spacing: 0.1rem;
   --radius: 0.25rem;
@@ -180,6 +180,7 @@ p {
 
   .intro__img {
     grid-area: img;
+    object-fit: cover;
     min-width: 250px;
     position: relative;
     z-index: 2;
