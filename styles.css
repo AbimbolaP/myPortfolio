@@ -50,7 +50,7 @@ Variables
 
   --clr-light: #fff;
   --clr-dark: #303030;
-  --clr-accent: #16e0bd;
+  --clr-accent: #5BB1DD;
 
   --fs-h1: 3rem;
   --fs-h2: 2.25rem;
@@ -83,8 +83,8 @@ Global Styles
 }
 body {
   font-family: var(--ff-secondary);
-  background: var(--clr-);
-  color: var(--clr-dark);
+  background: var(--clr-dark);
+  color: var(--clr-light);
   margin: 0;
   line-height: 1;
   font-size: var(--fs-body);
@@ -102,6 +102,27 @@ section {
 strong {
   font-weight: var(--fw-bold);
 }
+
+.btn { 
+  display: inline-block;
+  padding: .5em 1.5em;
+  background: var(--clr-accent);
+  opacity: 0.6;
+  color: var(--clr-dark);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+
+}
+.btn:hover {
+  transform: scale(1.1);
+
+}
+
 ul {
   list-style-type: none;
 }
@@ -227,7 +248,7 @@ Navbar
 ===============
 */
 nav {
-  background: var(--clr-white);
+  background: var(--clr-dark);
   box-shadow: var(--light-shadow);
 }
 .nav-header {
@@ -238,7 +259,7 @@ nav {
 }
 .nav-toggle {
   font-size: 1.5rem;
-  color: var(--clr-dark);
+  color: var(--clr-light);
   background: transparent;
   border-color: transparent;
   transition: var(--transition);
@@ -252,7 +273,7 @@ nav {
   height: 40px;
 }
 .links a {
-  color: var(--clr-dark);
+  color: var(--clr-light);
   font-size: 1rem;
   text-transform: capitalize;
   letter-spacing: var(--spacing);
@@ -261,7 +282,7 @@ nav {
   transition: var(--transition);
 }
 .links a:hover {
-  background: var(--clr-light);
+  background: var(--clr-dark);
   color: var(--clr-accent);
   padding-left: 1.5rem;
 }
@@ -308,7 +329,7 @@ nav {
   }
   .social-icons a {
     margin: 0 0.5rem;
-    color: var(--clr-dark);
+    color: var(--clr-light);
     transition: var(--transition);
   }
   .social-icons a:hover {
@@ -316,3 +337,84 @@ nav {
   }
 }
  
+/* My Services section */
+.my-services {
+  background-color: var(--clr-dark);
+  background-image: url(./images/coding.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: var(--clr-light);
+  text-align: center;
+}
+
+.section__title--services {
+  color: var(--clr-accent);
+  position: relative;
+}
+
+.section__title--services::after {
+  content:"";
+  display: block;
+  width: 2em;
+  height: 1px;
+  margin: 0.5em auto 1em;
+  background: var(--clr-light);
+  opacity: 0.25;
+}
+.service {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (min-width:800px) {
+  .services {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .service + .service {
+    margin-left: 2em;
+  }
+}
+
+/* About me */
+
+.about-me {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-me__img{
+  box-shadow: var(--bs);
+}
+@media (min-width: 600px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas: 
+    "title img"
+    "subtitle img"
+    "text img";
+    grid-column-gap: 2em;
+
+  }
+  .section__title--about{
+    grid-area: title;
+  }
+
+  .section__subtitle--about{
+    grid-column: 1/-1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(200px + 4em) ;
+  }
+
+  .about-me__img {
+    grid-area: img;
+    position: relative;
+    z-index: 2;
+  }
+}
