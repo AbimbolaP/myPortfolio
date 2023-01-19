@@ -254,14 +254,17 @@ Navbar
 ===============
 */
 nav {
-  background: var(--clr-dark);
-  box-shadow: var(--light-shadow);
+  background-color: var(--clr-dark);
+  box-shadow: var(--bs);
+  width: 100%;
+  position: sticky;
+  top: 0;
 }
 .nav-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 2rem;
 }
 .nav-toggle {
   font-size: 1.5rem;
@@ -456,5 +459,31 @@ nav {
  .portfolio__item:focus .portfolio_img {
   transform: scale(1.2);
   opacity: .75;
-
  }
+
+ /* contact */
+ .my-contact {
+  background: var(--clr-light) ;
+  color: var(--clr-dark);
+  text-align: center;
+ }
+ .section__title--contact {
+  background-color: var(--clr-accent);
+ }
+ .contact__link:hover {
+  color: var(--clr-accent);
+ }
+
+ /* footer */
+
+ .footer {
+  background: #111;
+  color: var(--clr-light);
+  text-align: center;
+  padding: 2.5em 0;
+ }
+
+ .contact__link {
+  color: inherit;
+ }
+ 
