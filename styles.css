@@ -439,7 +439,7 @@ nav {
 
  .portfolio {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
  }
  .portfolio__item {
   background: var(--clr-accent);
@@ -449,6 +449,7 @@ nav {
   transition: 
   transform 750ms cubic-bezier(.5, 0, .5, 1),
   opacity 250ms linear;
+  object-fit: cover;
  }
 
  .portfolio__item:focus {
